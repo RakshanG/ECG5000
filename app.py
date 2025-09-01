@@ -40,7 +40,7 @@ if uploaded_file is not None:
 
             # Prediction
             prediction = model.predict(input_data)
-            pred_class = np.argmax(prediction, axis=1)[0] + 1  # labels 1–5
+            pred_class = np.argmax(prediction, axis=1)[0] + 1  
             confidence = float(np.max(prediction))
 
             # Show results
